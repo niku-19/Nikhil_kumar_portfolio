@@ -33,36 +33,36 @@ const Contact = () => {
   return (
     <>
       <section id="contact">
-        <motion.h5 initial = {{
+        <motion.h5
+        initial={{
           opacity: 0,
-          x: -200,
-          scale: 3,
-          blur : 100,
+          y: -50,
+          scale: .1,
         }}
-        whileInView = {{
+        whileInView={{
           opacity: 1,
-          x: 0,
+          y: 0,
           scale: 1,
-          blur : 0,
           transition: {
             duration: 1.5,
-          }
-        }}>Get In Touch</motion.h5>
-        <motion.h1 initial = {{
-          opacity: 0,
-          x: 200,
-          scale: 3,
-          blur : 100,
+          },
         }}
-        whileInView = {{
+        >Get In Touch</motion.h5>
+        <motion.h1
+        initial={{
+          opacity: 0,
+          y: -50,
+          scale: .1,
+        }}
+        whileInView={{
           opacity: 1,
-          x: 0,
+          y: 0,
           scale: 1,
-          blur : 0,
           transition: {
             duration: 1.5,
-          }
-        }}>Contact Me</motion.h1>
+          },
+        }}
+        >Contact Me</motion.h1>
         <div className="container contact__container">
           <div className="contact__options">
             <motion.article

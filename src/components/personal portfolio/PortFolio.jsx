@@ -6,36 +6,36 @@ const PortFolio = () => {
   return (
     <>
       <section id="project">
-        <motion.h5 initial = {{
+        <motion.h5
+        initial={{
           opacity: 0,
-          x: -200,
-          scale: 3,
-          blur : 100,
+          y: -50,
+          scale: .1,
         }}
-        whileInView = {{
+        whileInView={{
           opacity: 1,
-          x: 0,
+          y: 0,
           scale: 1,
-          blur : 0,
           transition: {
             duration: 1.5,
-          }
-        }}>My Recent Work</motion.h5>
-        <motion.h1 initial = {{
-          opacity: 0,
-          x: 200,
-          scale: 3,
-          blur : 100,
+          },
         }}
-        whileInView = {{
+        >My Recent Work</motion.h5>
+        <motion.h1
+        initial={{
+          opacity: 0,
+          y: -50,
+          scale: .1,
+        }}
+        whileInView={{
           opacity: 1,
-          x: 0,
+          y: 0,
           scale: 1,
-          blur : 0,
           transition: {
             duration: 1.5,
-          }
-        }}>Portfolio</motion.h1>
+          },
+        }}
+        >Portfolio</motion.h1>
         <div className="container portfolio__container">
           <ProjectCard />
         </div>
